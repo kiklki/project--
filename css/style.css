@@ -1,0 +1,11 @@
+form {
+    display: inline-block;
+    margin-left: 50%;
+    margin-top: 10%;
+}
+input#username {
+    margin-bottom: 20px;
+}
+input#regis {
+    margin-top: 20px;
+}
