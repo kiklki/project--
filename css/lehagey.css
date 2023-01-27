@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+.menu{
+    align-items: center;
+}
+
 .container{
     width: 1170px;
 
@@ -16,7 +20,7 @@
 
 .nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -29,16 +33,22 @@
 
 li {
     padding-right: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: small;
 }
 
 li:hover{
     color: grey;
 }
 
+.ikona{
+    align-items: center;
+}
+
 i.fa {
     font-size: 25px;
     color: black;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .fa:hover{
@@ -70,11 +80,13 @@ i.fa {
 .category_info {
     padding-right: 15px;
     margin-top: 20px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .category_sum {
     font-size: 30px;
-    margin-top: 20px ;
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .news {
@@ -102,19 +114,27 @@ i.fa {
 .content {
 
 }
+
 .grid {
 
 }
-.grid_body {
+
+.grid__body {
     display: grid;
-
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template:repeat(2, 1fr) / repeat(3, 1fr);
 }
-.grid_item {
-    text-align: center;
+
+.grid__item {
     border: 2px dashed grey;
-    padding: 30px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.grid_item 
+img{
+    height: 150px;
+    width: 150px;
+}
+
+
